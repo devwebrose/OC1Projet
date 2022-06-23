@@ -1,0 +1,581 @@
+@media (max-width: 992px);
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+header
+{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#logo_site img
+{
+    width: 100px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+.logo_nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+nav li
+{
+    margin-right: 15px;
+}
+
+header a:hover
+{
+    text-decoration: overline;
+    color:#0065FC;
+}
+
+
+.presentation p
+{
+    margin: 15px;
+    margin-top: 5px;
+}
+
+
+.form
+{
+    border-radius: 6px;
+    height: 100%;
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.location
+{
+    width: 3%;
+    height: 36px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.location i
+{
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.resizedTextbox
+{
+    height: 30px;
+}
+
+button
+{
+    border: #0065FC ;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;
+    height: 36px;
+}
+button .search
+{
+    color: white;
+}
+
+
+.filters
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.filters p
+{
+    font-weight: bold;
+}
+
+.money_bill i, .child i, .heart i, .dog i
+{
+    background-color: #DEEBFF;
+    text-align: center;
+    padding: 13px;
+    margin: 5px 0px 0px 0px;
+    border-radius: 50%;
+    font-size: 0.9em;
+}
+
+.economy
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+    border: #F2F2F2 2px solid;
+    border-radius: 0px 40px 40px 0px;
+    border-left: none;
+    width: 160px;
+    height: 35px;
+}
+.fam
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+    border: #F2F2F2 2px solid;
+    border-radius: 0px 40px 40px 0px;
+    border-left: none;
+    width: 130px;
+    height: 35px;
+}
+.romance
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+    border: #F2F2F2 2px solid;
+    border-radius: 0px 40px 40px 0px;
+    border-left: none;
+    width: 150px;
+    height: 35px;
+
+}
+.animals
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+    border: #F2F2F2 2px solid;
+    border-radius: 0px 40px 40px 0px;
+    border-left: none;
+    width: 200px;
+    height: 35px;
+
+}
+
+.economic, .family, .romantic, .pets
+{
+    text-align: center;
+    padding: 10px;
+}
+
+
+.info_part
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+.info_icon
+{
+    padding-top: 5px;
+}
+.info_icon i
+{
+    font-size: 0.8em;
+    text-align: center;
+}
+.circle
+{
+    border: #F2F2F2 1px solid;
+    border-radius: 50%;
+    padding: 5%;
+}
+
+
+.main_content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px 15px 0px 15px;
+}
+
+
+.rooms_popular
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 0px;
+    gap: 30px;
+}
+
+.rooms_marseille, aside
+{
+    border: 2px #F2F2F2;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    height: 580px;
+}
+
+
+.rooms_marseille
+{
+    width: 65%;
+    margin: 20px;
+    position: relative;
+    align-items: stretch;
+}
+h2
+{
+    padding-left: 20px;
+}
+.rooms_cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    margin: 10px;
+    row-gap: 30px;
+}
+.room_card
+{
+    border: 2px white;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    width: 30%;
+    height: 0%
+}
+.card_image
+{
+    padding: 5px;
+    margin-bottom: 0px;
+    height: 60%;
+}
+.card_image img
+{
+    width: 100%;
+    height: 100px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+.card_body
+{
+    height : 40%;
+    padding-left: 0px;
+    padding-bottom: 1px;
+}
+.card_body p, .popular_body p
+{
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-size: small;
+}
+h3
+{
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-size: medium;
+}
+.stars
+{
+    gap: 1px;
+    font-size: 0.4em;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 12px;
+}
+i
+{
+    color: #0065FC;
+    font-size: 2em;
+}
+.grey i
+{
+    color: #F2F2F2;
+    font-size: 2em;
+
+}
+
+
+aside
+{
+    width: 30%;
+    margin-right: 30px;
+    padding-bottom: 0%;
+    align-content: space-between;
+}
+.most_popular
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.star_pop i
+{
+    color:black;
+    font-size: 1em;
+    padding-right: 20px;
+}
+.popular_cards
+{
+    height: 40%;
+    margin: 20px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    column-gap: 50px;
+    align-content: space-between;
+}
+.popular_card
+{
+    display: flex;
+    border: 2px white;
+    border-radius: 15px;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    
+}
+.popular_image
+{
+    width: 30%;
+    height : 100%;
+    border-radius: 15px 0px 0px 15px;
+}
+.popular_image img
+{
+    width: 100%;
+    height: 100px;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+}
+.stars_pop
+{
+    gap: 1px;
+    font-size: 0.4em;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+i
+{
+    width: 15px;
+    height: 15px;
+    color: #0065FC; /*?*/
+    margin-top: 0px;
+    margin-bottom: 8px;
+
+}
+i img
+{
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+
+.activities
+{
+    width: 96%;
+    justify-content: flex-start;
+    border: white dashed;
+    margin: Opx 15px 0px 15px;
+    position: relative;
+}
+.activities h2
+{
+    padding: 0%;
+}
+.activities_cards
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px 0px 10px;
+    border: white dashed;
+}
+
+.big_card h6
+{
+    align-content: center;
+    margin: 20px 0px 0px 15px;
+
+}
+.activity_body h6
+{
+   font-size: small;
+}
+.big_card
+{
+    width: 20%;
+    height: 350px;
+    border-radius: 15px;
+    margin-left: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0px 5px 20px #999;
+    
+}
+.big_image
+{
+    width: 100%;
+    height: 85%;
+    border-radius: 15px 15px 0px 0px;
+}
+.big_image img
+{
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.small_cards_part
+{
+    width: 20%;
+    height: 350px;
+}
+.small_card_1
+{
+    width: 100%;
+    height: 55%;
+    margin-bottom: 35px; /*GAP DE CETTE MANIERE ??*/
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px #999;
+}
+.small_card_1 h6
+{
+    margin: 12px 0px 0px 15px;
+}
+
+.small_card_2
+{
+    width: 100%;
+    height: 35%;
+    margin-bottom: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px #999;
+}
+.small_card_2 h6
+{
+    margin: 6px 0px 0px 15px;
+}
+.small_card_3
+{
+    width: 100%;
+    height: 40%;
+    margin-bottom: 50px; 
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px #999;
+}
+.small_card_3 h6
+{
+    margin: 7px 0px 0px 15px;
+}
+.small_card_4
+{
+    width: 100%;
+    height: 45%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px #999;
+}
+.small_card_4 h6
+{
+    margin: 10px 0px 0px 15px;
+}
+.small_image
+{
+    width: 100%;
+    height: 75%;
+    border-radius: 15px 15px 0px 0px;
+}
+.small_image img
+{
+    width: 100%;
+    height: 100% ;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+
+footer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #F2F2F2 ;
+    gap: 200px;
+}
+
+ul
+{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.about
+{
+
+}
+.houses
+{
+
+}
+.help
+{
+
+}
+
+
+
+h5
+{
+    font-size: large;
+    padding-left: 10px;
+}
+
+h6
+{
+    font-size: large;
+    align-items: flex-end;
+    margin-left: 30px;
+}
+
+.activities
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
