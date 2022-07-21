@@ -100,10 +100,12 @@ input::placeholder {
     width: 100px;
 }
 
-button .search {
+.research a {
     color: white;
     font-family: Raleway;
     font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .magnifying_glass {
@@ -601,7 +603,6 @@ h4 a:hover,
     nav ul {
         width: 100%;
         margin-bottom: 3%;
-        height: none;
         justify-content: space-around;
     }
 
@@ -615,8 +616,7 @@ h4 a:hover,
         padding-bottom: 22px;
     }
 
-    h1
-    {
+    h1 {
         padding-left: 4%;
     }
 
@@ -626,8 +626,7 @@ h4 a:hover,
         padding-left: 4%;
     }
 
-    form
-    {
+    form {
         padding-left: 4%;
     }
 
@@ -679,8 +678,7 @@ h4 a:hover,
         width: 100%;
     }
 
-    .rooms_popular
-    {
+    .rooms_popular {
         width: auto;
         justify-content: space-between;
         padding-left: 4%;
@@ -767,8 +765,7 @@ h4 a:hover,
         margin-bottom: 5%;
     }
 
-    .activities h2
-    {
+    .activities h2 {
         padding-left: 4%;
     }
 
@@ -893,7 +890,6 @@ h4 a:hover,
 
     nav ul {
         width: 100%;
-        height: none;
         justify-content: space-around;
     }
 
@@ -1001,10 +997,6 @@ h4 a:hover,
         padding: 5%;
     }
 
-    .popular_card {
-        height: none;
-    }
-
     .popular_card h3 {
         font-size: smaller;
         margin-bottom: 10px;
@@ -1044,7 +1036,6 @@ h4 a:hover,
 
     .room_card {
         width: 100%;
-        height: none;
         margin: 0;
     }
 
