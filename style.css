@@ -1,576 +1,589 @@
+
 body {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-header {
-    margin: 3% 3% 0% 3%;
-}
-
-.logo_nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 0px;
-    padding-bottom: 10px;
-}
-
-#logo_site {
-    width: 10%;
-    padding-top: 1%;
-}
-
-#logo_site img {
-    width: 75%;
-    margin-left: 25%;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    height: 100%;
-    margin-top: 5%;
-    padding-top: 0;
-}
-
-nav li {
-    margin-right: 50px;
-}
-
-nav a:hover {
-    border-top: 3px #0065FC solid;
-    padding-top: 48px;
-    color: #0065FC;
-}
-
-h1 {
-    margin-left: 0;
-    margin-top: 5px;
-}
-
-.presentation p {
-    margin-left: 0;
-    margin-top: 0;
-}
-
-form {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-form i {
-    font-size: 1em;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    height: 14px;
-    background-color: #F2F2F2;
-    border-radius: 10px 0px 0px 10px;
-}
-
-.resizedTextbox {
-    height: 30px;
-    border: #F2F2F2 1px solid;
-    padding-left: 10px;
-    font-family: Raleway;
-    font-weight: bold;
-}
-
-input::placeholder {
-    color: black;
-}
-
-.research {
-    border: #0065FC;
-    border-radius: 0px 10px 10px 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #0065FC;
-    height: 34px;
-    cursor: pointer;
-    color: white;
-    font-family: Raleway;
-    font-weight: bold;
-    font-size: medium;
-}
-
-.magnifying_glass {
-    visibility: hidden;
-}
-
-.filters {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.filters p {
-    padding: 5px;
-}
-
-.categories {
-    display: flex;
-    width: 100%;
-    gap: 20px;
-}
-
-.filters p {
-    font-weight: bold;
-}
-
-.money_bill i,
-.heart i,
-.dog i {
-    font-size: 90%;
-    border-radius: 50%;
-    text-align: center;
-    padding: 12px;
-    margin: 0;
-    background-color: #DEEBFF;
-}
-
-.child i {
-    font-size: 100%;
-    border-radius: 50%;
-    text-align: center;
-    padding: 12px 14px 12px 14px;
-    margin: 0;
-    background-color: #DEEBFF;
-}
-
-.economy a,
-.romance a,
-.fam a,
-.animals a {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border: #F2F2F2 2px solid;
-    border-radius: 40px;
-    border-left: none;
-    height: 35px;
-    transition: .1s;
-}
-
-.economy {
-    width: 160px;
-}
-
-.romance {
-    width: 160px;
-}
-
-.fam {
-    width: 130px;
-}
-
-.animals {
-    width: 210px;
-}
-
-.economic,
-.family,
-.romantic,
-.pets {
-    text-align: center;
-    padding: 10px;
-}
-
-.economy a:hover,
-.fam a:hover,
-.romance a:hover,
-.animals a:hover,
-.room_card:hover,
-.popular_card:hover,
-.big_card_1:hover,
-.big_card_2:hover,
-.small_card_1:hover,
-.small_card_2:hover,
-.small_card_3:hover,
-.small_card_4:hover {
-    transform: scale(1.08)
-}
-
-.info_part {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    gap: 20px;
-}
-
-.info_icon i {
-    font-size: 70%;
-    text-align: center;
-    color: #0065FC;
-}
-
-.circle {
-    border: #F2F2F2 1px solid;
-    border-radius: 50%;
-    padding: 40% 90% 40% 90%;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 3%;
-}
-
-.rooms_popular {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    padding: 0;
-    gap: 3%;
-}
-
-.rooms_popular h2 {
-    font-size: larger;
-}
-
-.rooms_marseille,
-aside {
-    border: 2px #F2F2F2;
-    border-radius: 10px;
-    background-color: #F2F2F2;
-}
-
-.rooms_marseille {
-    width: 80%;
-    padding: 2% 3% 0% 3%;
-}
-
-.rooms_cards {
-    height: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: space-between;
-    row-gap: 20px;
-}
-
-.room_card {
-    width: 218px;
-    height: 165px;
-    border: 2px;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 0px 5px 20px #999;
-    transition: .1s;
-}
-
-.card_image {
-    padding: 2%;
-    height: 55%;
-}
-
-.card_image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-}
-
-.rooms_marseille h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 7%;
-    font-size: medium;
-}
-
-.card_body p {
-    margin-top: 1%;
-    margin-bottom: 0;
-    margin-left: 7%;
-    font-size: small;
-}
-
-.stars {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 3%;
-    margin-left: 7%;
-    gap: 1px;
-    font-size: 40%;
-}
-
-i {
-    color: #0065FC;
-    font-size: 200%;
-}
-
-.grey i {
-    color: #F2F2F2;
-    font-size: 200%;
-
-}
-
-.rooms_marseille h4 {
-    font-size: large;
-    margin-top: 11%;
-}
-
-aside {
-    width: 35%;
-    padding: 2% 3% 0% 3%;
-}
-
-.most_popular_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-}
-
-.star_pop i {
-    color: black;
-    font-size: 100%;
-}
-
-.popular_cards {
-    height: 80%;
-    flex-direction: column;
-    align-content: space-between;
-}
-
-.popular_card {
-    display: flex;
-    border: 2px;
-    border-radius: 15px;
-    padding: 1.5%;
-    margin-bottom: 10%;
-    height: 120px;
-    background-color: white;
-    box-shadow: 0px 5px 20px #999;
-    transition: .1s;
-}
-
-.popular_image {
-    width: 40%;
-}
-
-.popular_image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px 0px 0px 15px;
-    object-fit: cover;
-}
-
-.popular_body {
-    padding-left: 4%;
-    width: 50%;
-}
-
-.popular_body h3 {
-    margin-top: 5%;
-    margin-left: 0;
-    margin-bottom: 0;
-    font-size: medium;
-}
-
-.popular_body p {
-    margin-top: 1%;
-    margin-bottom: 25%;
-    font-size: small;
-}
-
-.stars_pop {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 40%;
-    gap: 1px;
-}
-
-.activities {
-    width: 100%;
-    justify-content: flex-start;
-    border: white dashed;
-    margin: 30px 0px 30px 0px;
-}
-
-.activities h2 {
-    font-size: larger;
-}
-
-.activities_cards {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.big_card_1,
-.big_card_2 {
-    width: 25%;
-    border-radius: 15px;
-    box-shadow: 0px 5px 20px #999;
-    transition: .1s;
-}
-
-.big_image {
-    width: 100%;
-    height: 85%;
-    border-radius: 15px 15px 0px 0px;
-}
-
-.big_image img {
-    border-radius: 15px 15px 0px 0px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.big_card_1 h3,
-.big_card_2 h3,
-.small_card_2 h3 {
-    margin-top: 6%;
-    margin-left: 6%;
-    font-size: medium;
-}
-
-.small_cards_part {
-    width: 25%;
-}
-
-.small_card_1 {
-    height: 190px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 20px #999;
-    margin-bottom: 10%;
-    transition: .1s;
-}
-
-.small_card_1 .small_image {
-    width: 100%;
-    height: 75%;
-    border-radius: 15px 15px 0px 0px;
-}
-
-.small_card_1 h3,
-.small_card_4 h3 {
-    margin-top: 5%;
-    margin-left: 6%;
-    font-size: medium;
-}
-
-.small_card_2 {
-    height: 132px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 20px #999;
-    transition: .1s;
-}
-
-.small_card_2 .small_image {
-    width: 100%;
-    height: 60%;
-    border-radius: 15px 15px 0px 0px;
-}
-
-.small_card_3 {
-    height: 160px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 20px #999;
-    margin-bottom: 10%;
-    transition: .1s;
-}
-
-.small_card_3 .small_image {
-    width: 100%;
-    height: 70%;
-    border-radius: 15px 15px 0px 0px;
-}
-
-.small_card_3 h3 {
-    margin-top: 4%;
-    margin-left: 6%;
-    font-size: medium;
-}
-
-.small_card_4 {
-    height: 162px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 20px #999;
-    transition: .1s;
-}
-
-.small_card_4 .small_image {
-    width: 100%;
-    height: 68%;
-    border-radius: 15px 15px 0px 0px;
-}
-
-.small_image img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px 15px 0px 0px;
-    object-fit: cover;
-}
-
-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: #F2F2F2;
-    padding-top: 2%;
-    gap: 200px;
-}
-
-footer h3 {
-    font-size: medium;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.about {
-    margin-left: 3%;
-}
-
-footer li:not(:last-child) {
-    margin-bottom: 15px;
-}
-
-h4 a:hover,
-.links_info a:hover {
-    text-decoration: 2px underline;
-    color: black;
-}
-
-
-@media all and (min-width: 768px) and (max-width: 992px) {
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    header {
+        margin: 3% 3% 0% 3%;
+    }
+
+    .logo_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    #logo_site {
+        width: 10%;
+        padding-top: 1%;
+    }
+
+    #logo_site img {
+        width: 75%;
+        margin-left: 25%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        height: 100%;
+        margin-top: 5%;
+        padding-top: 0;
+    }
+
+    nav li {
+        margin-right: 50px;
+    }
+
+    nav a:hover {
+        border-top: 3px #0065FC solid;
+        padding-top: 48px;
+        color: #0065FC;
+    }
+
+    h1 {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .presentation p {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    form i {
+        font-size: 1em;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        height: 14px;
+        background-color: #F2F2F2;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .resizedTextbox {
+        height: 30px;
+        border: #F2F2F2 1px solid;
+        padding-left: 10px;
+        font-family: Raleway;
+        font-weight: bold;
+    }
+
+    input::placeholder {
+        color: black;
+    }
+
+    .research {
+        border: #0065FC;
+        border-radius: 0px 10px 10px 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #0065FC;
+        height: 34px;
+        cursor: pointer;
+        color: white;
+        font-family: Raleway;
+        font-weight: bold;
+        font-size: medium;
+    }
+
+    .magnifying_glass {
+        visibility: hidden;
+    }
+
+    .filters {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .filters p {
+        padding: 5px;
+    }
+
+    .categories {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .filters p {
+        font-weight: bold;
+    }
+
+    .money_bill i,
+    .heart i,
+    .dog i {
+        font-size: 90%;
+        border-radius: 50%;
+        text-align: center;
+        padding: 12px;
+        margin: 0;
+        background-color: #DEEBFF;
+    }
+
+    .child i {
+        font-size: 100%;
+        border-radius: 50%;
+        text-align: center;
+        padding: 12px 14px 12px 14px;
+        margin: 0;
+        background-color: #DEEBFF;
+    }
+
+    .economy a,
+    .romance a,
+    .fam a,
+    .animals a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: #F2F2F2 2px solid;
+        border-radius: 40px;
+        border-left: none;
+        height: 35px;
+    }
+
+    .economy {
+        width: 160px;
+    }
+
+    .romance {
+        width: 160px;
+    }
+
+    .fam {
+        width: 130px;
+    }
+
+    .animals {
+        width: 210px;
+    }
+
+    .economic,
+    .family,
+    .romantic,
+    .pets {
+        text-align: center;
+        padding: 10px;
+    }
 
     .economy a:hover,
     .fam a:hover,
     .romance a:hover,
     .animals a:hover,
-    .room_card:hover,
-    .popular_card:hover,
-    .big_card_1:hover,
-    .big_card_2:hover .small_card_1:hover,
-    .small_card_2:hover,
-    .small_card_3:hover,
-    .small_card_4:hover,
+    .room_card a:hover,
+    .popular_card a:hover,
+    .big_card_1 a:hover,
+    .big_card_2 a:hover,
+    .small_card_1 a:hover,
+    .small_card_2 a:hover,
+    .small_card_3 a:hover,
+    .small_card_4 a:hover {
+        color: #0065FC;
+    }
+
+    .info_part {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .info_icon i {
+        font-size: 70%;
+        text-align: center;
+        color: #0065FC;
+    }
+
+    .circle {
+        border: #F2F2F2 1px solid;
+        border-radius: 50%;
+        padding: 40% 90% 40% 90%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 3%;
+    }
+
+    .rooms_popular {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 0;
+        gap: 3%;
+    }
+
+    .rooms_popular h2 {
+        font-size: larger;
+    }
+
+    .rooms_marseille,
+    aside {
+        border: 2px #F2F2F2;
+        border-radius: 10px;
+        background-color: #F2F2F2;
+    }
+
+    .rooms_marseille {
+        width: 80%;
+        padding: 2% 3% 0% 3%;
+    }
+
+    .rooms_cards {
+        height: 70%;
+        justify-content: space-between;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first_line,
+    .second_line {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        gap: 2%;
+        border: greenyellow dashed 4px;
+    }
+
+    .room_card {
+        width: 35%;
+        height: 170px;
+        border: 2px;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0px 5px 20px #999;
+    }
+
+    .card_image {
+        padding: 5px;
+        height: 55%;
+    }
+
+    .card_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .rooms_marseille h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: smaller;
+    }
+
+    .card_body {
+        margin-left: 15px;
+        margin-top: 2px;
+    }
+
+    .card_body p {
+        margin-top: 1%;
+        margin-bottom: 5px;
+        font-size: small;
+    }
+
+    .stars {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 0%;
+        gap: 1px;
+        font-size: 40%;
+    }
+
+    i {
+        color: #0065FC;
+        font-size: 200%;
+    }
+
+    .grey i {
+        color: #F2F2F2;
+        font-size: 200%;
+
+    }
+
+    .rooms_marseille h4 {
+        font-size: large;
+    }
+
+    aside {
+        width: 35%;
+        padding: 2% 3% 0% 3%;
+    }
+
+    .most_popular_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+    .star_pop i {
+        color: black;
+        font-size: 100%;
+    }
+
+    .popular_cards {
+        height: 80%;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .popular_card {
+        display: flex;
+        border: 2px;
+        border-radius: 15px;
+        padding: 5px;
+        margin-bottom: 10%;
+        height: 120px;
+        background-color: white;
+        box-shadow: 0px 5px 20px #999;
+        transition: .1s;
+    }
+
+    .popular_image {
+        width: 40%;
+    }
+
+    .popular_image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px 0px 0px 15px;
+        object-fit: cover;
+    }
+
+    .popular_body {
+        padding-left: 12px;
+        width: 50%;
+    }
+
+    .popular_body h3 {
+        margin-top: 5%;
+        margin-left: 0;
+        margin-bottom: 3px;
+        font-size: medium;
+    }
+
+    .popular_body p {
+        margin-top: 1%;
+        margin-bottom: 20px;
+        font-size: small;
+    }
+
+    .stars_pop {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 40%;
+        gap: 1px;
+        border: green dashed 2px;
+    }
+
+    .activities {
+        width: 100%;
+        justify-content: flex-start;
+        border: white dashed;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .activities h2 {
+        font-size: larger;
+    }
+
+    .activities_cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        border: red dashed 3px;
+    }
+
+    .big_card_1,
+    .big_card_2 {
+        width: 25%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px #999;
+        border: black dashed 3px;
+    }
+
+    .big_image {
+        width: 100%;
+        height: 85%;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .big_image img {
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .big_card_1 h3,
+    .big_card_2 h3,
+    .small_card_2 h3 {
+        margin-top: 6%;
+        margin-left: 6%;
+        font-size: medium;
+    }
+
+    .small_cards_part {
+        width: 25%;
+        border: black dashed 3px;
+    }
+
+    .small_card_1 {
+        height: 190px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px #999;
+    }
+
+    .small_card_1 .small_image {
+        width: 100%;
+        height: 75%;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .small_card_1 h3,
+    .small_card_4 h3 {
+        margin-top: 5%;
+        margin-left: 6%;
+        font-size: medium;
+    }
+
+    .small_card_2 {
+        height: 132px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px #999;
+    }
+
+    .small_card_2 .small_image {
+        width: 100%;
+        height: 60%;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .small_card_3 {
+        height: 160px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px #999;
+        margin-bottom: 10%;
+        transition: .1s;
+    }
+
+    .small_card_3 .small_image {
+        width: 100%;
+        height: 70%;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .small_card_3 h3 {
+        margin-top: 4%;
+        margin-left: 6%;
+        font-size: medium;
+    }
+
+    .small_card_4 {
+        height: 162px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 20px #999;
+        transition: .1s;
+    }
+
+    .small_card_4 .small_image {
+        width: 100%;
+        height: 68%;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .small_image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: #F2F2F2;
+        padding-top: 2%;
+        gap: 200px;
+    }
+
+    footer h3 {
+        font-size: medium;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .about {
+        margin-left: 3%;
+    }
+
+    footer li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
     h4 a:hover,
     .links_info a:hover {
-        display: none;
+        text-decoration: 2px underline;
+        color: black;
+    }
+
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+
+    .room_card a:hover,
+    .popular_card a:hover,
+    .big_card_1 a:hover,
+    .big_card_2 a:hover,
+    .small_card_1 a:hover,
+    .small_card_2 a:hover,
+    .small_card_3 a:hover,
+    .small_card_4 a:hover,
+    h4 a:hover,
+    .links_info a:hover {
+        color: inherit;
+    }
+
+    .economy a:hover,
+    .fam a:hover,
+    .romance a:hover,
+    .animals a:hover {
+        color: inherit;
     }
 
     header {
@@ -686,26 +699,25 @@ h4 a:hover,
 
     .rooms_popular {
         width: auto;
+        flex-direction: column;
         justify-content: space-between;
         padding-left: 4%;
         padding-right: 4%;
     }
 
     .rooms_marseille {
-        padding: 0;
-        width: 60%;
+        padding-left: 3%;
+        padding-right: 3%;
+        width: auto;
+        margin-bottom: 3%;
     }
 
-    .rooms_marseille h2 {
-        margin: 8% 5% 5% 5%
-    }
+    .rooms_marseille h2 {}
 
     .rooms_cards {
         justify-content: space-around;
         height: auto;
         gap: 10px;
-        padding-left: 3%;
-        padding-right: 3%;
     }
 
     .room_card {
@@ -714,29 +726,30 @@ h4 a:hover,
         margin: 0;
     }
 
+    .card_body {
+        margin-left: 1%;
+    }
+
+
     .rooms_marseille h3,
     .card_body p {
         margin-left: 5%;
     }
 
-    .rooms_marseille h3 {
-        font-size: smaller;
-        margin-bottom: 3%;
-    }
 
     .stars {
-        margin-top: 3%;
         margin-left: 5%;
     }
 
     .rooms_marseille h4 {
-        margin-top: 25px;
-        padding-left: 27px;
+        margin-top: 3%;
+        font-size: medium;
+        font-style: italic;
     }
 
     aside {
         padding: 0;
-        width: 40%;
+        width: auto;
     }
 
     .most_popular_title {
@@ -756,15 +769,34 @@ h4 a:hover,
 
     .popular_card {
         height: 150px;
+        padding: 1%;
+    }
+
+    .popular_body{
+        border: grey dashed 4px;
+        padding-left: 0;
     }
 
     .popular_card h3 {
-        font-size: smaller;
-        margin-bottom: 20%;
+        font-size: larger;
+        width: auto;
+        padding-left: 2%;
+        margin-bottom: 0;
+        border: red dashed 4px;
+
     }
 
     .popular_body p {
-        margin-bottom: 30%;
+        margin-bottom: 0;
+        padding-left: 2%;
+        border: green dashed 4px;
+    }
+
+    .stars_pop
+    {
+        border: blue dashed 4px;
+        padding-left: 10%;
+        position: absolute;
     }
 
     .activities {
@@ -851,23 +883,23 @@ h4 a:hover,
 }
 
 
-@media all and (max-width: 766px) {
+@media all and (max-width: 767px) {
 
     .economy a:hover,
     .fam a:hover,
     .romance a:hover,
     .animals a:hover,
-    .room_card:hover,
-    .popular_card:hover,
-    .big_card_1:hover,
-    .big_card_2:hover,
-    .small_card_1:hover,
-    .small_card_2:hover,
-    .small_card_3:hover,
-    .small_card_4:hover,
+    .room_card a:hover,
+    .popular_card a:hover,
+    .big_card_1 a:hover,
+    .big_card_2 a:hover,
+    .small_card_1 a:hover,
+    .small_card_2 a:hover,
+    .small_card_3 a:hover,
+    .small_card_4 a:hover,
     h4 a:hover,
     .links_info a:hover {
-        display: none;
+        color: inherit;
     }
 
     header {
@@ -919,7 +951,7 @@ h4 a:hover,
     }
 
     h1 {
-        padding-left: 18px;
+        padding-left: 5%;
     }
 
     .presentation p {
@@ -1017,7 +1049,7 @@ h4 a:hover,
     }
 
     .popular_card h3 {
-        font-size: smaller;
+        font-size: large;
         margin-bottom: 10px;
     }
 
@@ -1027,12 +1059,10 @@ h4 a:hover,
 
     .popular_card p {
         margin-top: 0;
-        margin-bottom: 20%;
     }
 
     .stars_pop {
         margin-top: 0;
-        margin-bottom: 10px;
     }
 
     .rooms_marseille {
@@ -1051,6 +1081,13 @@ h4 a:hover,
     .rooms_cards {
         flex-direction: column;
         padding: 5%;
+        gap: 15px;
+    }
+
+    .first_line,
+    .second_line {
+        flex-direction: column;
+        gap: 15px;
     }
 
     .room_card {
@@ -1058,14 +1095,18 @@ h4 a:hover,
         margin: 0;
     }
 
+    .card_body {
+        margin-left: 1%;
+    }
+
     .rooms_marseille h3,
     .card_body p {
-        margin-left: 5%;
+        margin-left: 3%;
     }
 
     .stars {
         margin-top: 1%;
-        margin-left: 5%;
+        margin-left: 3%;
     }
 
     .rooms_marseille h4 {
@@ -1101,27 +1142,30 @@ h4 a:hover,
         width: 100%;
     }
 
+
     .big_card_1,
     .big_card_2,
     .small_cards_part {
         width: 100%;
-        gap: 20px;
     }
 
     .big_image {
         height: 70%;
     }
 
+    .small_card_1
+    {
+        margin-bottom: 25px;
+    }
     .small_card_1 .small_image,
     .small_card_2 .small_image,
     .small_card_4 .small_image {
         height: 70%;
     }
-    
-    .big_card_1 h3, 
+
+    .big_card_1 h3,
     .big_card_2 h3,
-    .small_cards_part h3
-    {
+    .small_cards_part h3 {
         margin-top: 15px;
         margin-left: 15px;
     }
